@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
+    'fullstackapplication-gvd1.onrender.com'
 ]
 
 

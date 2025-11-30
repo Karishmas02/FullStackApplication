@@ -1,0 +1,11 @@
+asgiref==3.10.0
+Django==5.2.8
+django-cors-headers==4.9.0
+django-jazzmin==3.0.1
+dnspython==2.7.0
+gunicorn==23.0.0
+packaging==25.0
+pymongo==4.12.1
+sqlparse==0.5.3
+tzdata==2025.2
+whitenoise==6.11.0

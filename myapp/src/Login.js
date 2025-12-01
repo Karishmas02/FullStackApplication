@@ -8,6 +8,8 @@ const Login = () => {
     const [Password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const navigate = useNavigate();
+     const api=process.env.REACT_APP_URL
+    console.log(api)
 
     // const handleMoveToRegister = () => {
     //     navigate("/Register");
@@ -18,7 +20,7 @@ const Login = () => {
 
         const data = { Email, Password };
 
-        axios.post("http://127.0.0.1:8000/login/", data)
+        axios.post(`${api}login/`, data)
             .then(response => {
                 let message=response.data.message
                 if (message==="Login Successfully"){

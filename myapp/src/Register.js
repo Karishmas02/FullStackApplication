@@ -9,6 +9,8 @@ const Register = () => {
     const [Email, setEmail] = useState("");
     const [Password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    const api=process.env.REACT_APP_URL
+    console.log(api)
     const navigate = useNavigate();
     const handleMoveToLogin = () => {
         navigate("/login"); 
